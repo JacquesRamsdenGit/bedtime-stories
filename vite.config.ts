@@ -5,6 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/stories/',
   plugins: [
     vue(),
     VitePWA({
@@ -15,8 +16,7 @@ export default defineConfig({
         description: 'A bedtime-themed storybook reader for children',
         theme_color: '#2d3142',
         background_color: '#22223b',
-        display: 'standalone',
-        publicPath: '/bedtime-stories/',
+        display: 'standalone',        
         icons: [
           {
             src: '/icon-192x192.png',
